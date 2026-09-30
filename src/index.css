@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Primary: deep medical red ── */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fde8e8;
+  --color-primary-200: #fbd5d5;
+  --color-primary-300: #f8a4a4;
+  --color-primary-400: #f27171;
+  --color-primary-500: #dc2626;
+  --color-primary-600: #c81e1e;
+  --color-primary-700: #a31b1b;
+  --color-primary-800: #871b1b;
+  --color-primary-900: #6f1d1d;
+
+  /* ── Neutral: warm gray ── */
+  --color-surface-50: #fafaf9;
+  --color-surface-100: #f5f5f4;
+  --color-surface-200: #e7e5e4;
+  --color-surface-300: #d6d3d1;
+  --color-surface-400: #a8a29e;
+  --color-surface-500: #78716c;
+  --color-surface-600: #57534e;
+  --color-surface-700: #44403c;
+  --color-surface-800: #292524;
+  --color-surface-900: #1c1917;
+
+  /* ── Semantic colors ── */
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+  --color-info: #2563eb;
+
+  /* ── Font ── */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ── Base ── */
+body {
+  @apply bg-surface-50 text-surface-900 antialiased;
+  font-family: var(--font-sans);
+}
+
+/* ── Inter font ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
